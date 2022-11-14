@@ -1,4 +1,4 @@
-let ginastas = [
+let atletas = [
   {
     nome: "Cesar Abascal",
     notas: [10, 9.34, 8.42, 10, 7.88]
@@ -17,9 +17,9 @@ let ginastas = [
   }
  ];
  
- for (let i = 0; i < ginastas.length; i++){
+ for (let i = 0; i < atletas.length; i++){
  
-   let notas = ginastas[i].notas;
+   let notas = atletas[i].notas;
    notas = notas.sort();
    notas = notas.slice(1,4);
  
@@ -29,7 +29,7 @@ let ginastas = [
  
    let notaValida = somaNota / notas.length;
  
-   console.log("Ginasta: " + ginastas[i].nome);
-   console.log("Recebeu: " + ginastas[i].notas);
+   console.log("Ginasta: " + atletas[i].nome);
+   console.log("Recebeu: " + atletas[i].notas);
    console.log("Resultado: " + notaValida); 
  }
